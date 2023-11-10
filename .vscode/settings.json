@@ -1,6 +1,6 @@
 {
 	"editor.tabSize": 4,
-	"prettier.printWidth": 999999,
+	"prettier.printWidth": 100,
 	"prettier.proseWrap": "never",
 	"svelte.plugin.svelte.format.config.printWidth": 90
 }
