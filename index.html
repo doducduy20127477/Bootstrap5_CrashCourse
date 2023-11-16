@@ -52,7 +52,7 @@
 						<a class="nav-link" href="#pricing">Pricing</a>
 					</li>
 					<li class="nav-item ms-2 d-none d-md-inline">
-						<a class="btn btn-secondary" href="#pricing">buy now</a>
+						<a class="btn btn-secondary" href="#pricing">Buy now</a>
 					</li>
 				</ul>
 			</div>
@@ -72,7 +72,9 @@
 					<a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
 				</div>
 				<div class="col-md-5 d-none d-md-block">
-					<img class="img-fluid" src="./assets/ebook-cover.png" />
+					<span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
+						<img class="img-fluid" src="./assets/ebook-cover.png" />
+					</span>
 				</div>
 			</div>
 		</div>
@@ -397,6 +399,13 @@
 							</span>
 							<input type="email" class="form-control" id="email"
 								placeholder="e.g. mario@example.com">
+							<span class="tt" data-bs-placement="bottom"
+								title="Enter an email address we can rely to.">
+								<span class="input-group-text">
+									<i class="bi bi-question-circle text-muted"></i>
+								</span>
+							</span>
+
 						</div>
 
 
@@ -407,12 +416,18 @@
 							</span>
 							<input type="text" class="form-control" id="name"
 								placeholder="e.g. Mario">
+							<span class="tt" data-bs-placement="bottom"
+								title="Pretty self explanatory really...">
+								<span class="input-group-text">
+									<i class="bi bi-question-circle text-muted"></i>
+								</span>
+							</span>
+
 						</div>
 
 
 						<label for="subject" class="form-label">What is your question
 							about?</label>
-
 						<div class="input-group mb-4">
 							<span class="input-group-text">
 								<i class="bi bi-chat-right-dots-fill"></i>
@@ -442,6 +457,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
+	<script>
+		const tooltips = document.querySelectorAll(".tt");
+		tooltips.forEach(t => {
+			new bootstrap.Tooltip(t);
+		});
+	</script>
 </body>
 
 </html>
