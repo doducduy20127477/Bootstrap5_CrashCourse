@@ -3,5 +3,18 @@
 	"prettier.printWidth": 100,
 	"prettier.proseWrap": "never",
 	"svelte.plugin.svelte.format.config.printWidth": 90,
-	"editor.minimap.autohide": false
+	"editor.minimap.autohide": false,
+	"liveSassCompile.settings.formats": [
+		// {
+		// 	"format": "expanded",
+		// 	"extensionName": ".css",
+		// 	"savePath": null,
+		// 	"savePathReplacementPairs": null
+		// }
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "/css"
+		}
+	]
 }
