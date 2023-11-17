@@ -1,6 +1,6 @@
 # BOOTSTRAP 5 WITH RESPONSIVE  
 
-- This is my crash course for learning Bootstrap  
+- This is my result learning Bootstrap from crash course   
 - It used Responsive too
 - Source: https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
   
